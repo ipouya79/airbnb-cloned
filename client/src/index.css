@@ -72,17 +72,25 @@ select {
 input::placeholder , select , textarea::placeholder{
   text-align:right;
 }
-input[type="password"]::placeholder,
-input[type="email"]::placeholder{
-  text-align: left;
-}
 
 input[type="text"]::placeholder{
-  text-align: right;
+  text-align: right !important;
 }
-  .loginNameClass::placeholder{
-text-align: left !important;
-  }
+
+input[type="text"]{
+  text-align: right !important;
+}
+#loginPassword , #loginEmail ,#registerName , #registerEmail , #registerPassword{
+  text-align: left !important;
+
+}
+
+#loginPassword::placeholder , #loginEmail::placeholder ,#registerName::placeholder , #registerEmail::placeholder , #registerPassword::placeholder{
+  text-align: left !important;
+
+}  
+
+
 
 textarea {
   direction: rtl;
@@ -125,9 +133,11 @@ div.min-size {
   outline: none !important;
   text-align: right;
 }
+.exit-responsive{
+  display: none;
+}
 
-
-@media only screen and (max-width:500px){
+@media only screen and (max-width:480px){
   .inner-mobile{
     margin: 0 !important;
   }
@@ -136,4 +146,26 @@ display: flex !important;
 flex-direction: column !important;
 
   }
+.p-hide-text{
+  display: none;
 }
+.exit-responsive{
+  display: block;
+}
+#adminPanelFlex{
+  width: 70%;
+  margin-right: 140px;
+}
+.lg-custom-text{
+  font-size: 13px;
+}
+.sm-custom-text{
+  font-size: 11px;
+}
+.custom-right{
+  text-align: right;
+}
+}
+
+
+

@@ -21,7 +21,7 @@ export default function ProfilePage() {
   return (
     <div>
       {subpage === "profile" && (
-        <div className="text-right  max-w-lg mx-4">
+        <div className="text-right  mx-4 ">
           خوش آمدید {user.name} <br />({user.email}) <br />
         </div>
       )}

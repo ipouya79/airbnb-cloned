@@ -28,7 +28,7 @@ export default function BookingsPage() {
                 <ListingImg listing={booking.listing} />
               </div>
               <div className="py-3 pr-3 grow">
-                <h2 className="text-lg font-semibold">
+                <h2 className="text-lg font-semibold text-right">
                   {booking.listing.title}
                 </h2>
                 <BookingDates
@@ -36,12 +36,11 @@ export default function BookingsPage() {
                   className="my-2 text-sm"
                 ></BookingDates>
                 <div className="text-sm rtl-direction text-right">
-                    
-                    {differenceInCalendarDays(
-                      new Date(booking.checkOut),
-                      new Date(booking.checkIn)
-                    ) } شب   
-                  | مجموع پرداختی: {booking.price} تومان
+                  {differenceInCalendarDays(
+                    new Date(booking.checkOut),
+                    new Date(booking.checkIn)
+                  )}{" "}
+                  شب | مجموع پرداختی: {booking.price} تومان
                 </div>
               </div>
             </Link>

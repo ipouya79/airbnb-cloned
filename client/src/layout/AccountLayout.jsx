@@ -14,13 +14,13 @@ export default function AccountLayout() {
 }
 
     return (
-      <div className="flex flex-row-reverse">
-        <div className="flex-shrink-0 bg-gray-200">
-          <div className="fixed right-0 top-0 h-full account-nav-width">
+      <div id="adminPanelFlex" className="flex flex-row-reverse">
+        <div  className=" flex-shrink-0 bg-gray-200 	">
+          <div id="sideNavAdmin" className=" fixed right-0 top-0 h-full ">
             <AccountNav />
           </div>
         </div>
-        <div className="mt-4 ">
+        <div id="outletAdmin" className="mt-4  w-full">
           <Outlet />
         </div>
       </div>

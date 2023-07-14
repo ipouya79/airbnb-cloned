@@ -9,7 +9,7 @@ export default function ListingGallery({ listing }) {
       <div className="absolute inset-0 bg-black text-white min-h-screen z-50">
         <div className="bg-black p-8 grid gap-4 ">
           <div>
-            <h2 className="sm:mr-0 text-1xl md:text-3xl mr-6 ">تصاویر {listing.title} </h2>
+            <h2 className="sm:mr-0 text-1xl md:text-3xl mr-6 text-center ">تصاویر {listing.title} </h2>
             <button
               onClick={() => setShowAllImages(false)}
               className="flex right-2 top-2 gap-1 py-2 px-4 rounded-xl fixed bg-white text-black"
@@ -75,7 +75,7 @@ export default function ListingGallery({ listing }) {
           {listing.images?.[2] && (
             <Image
               onClick={() => setShowAllImages(true)}
-              className="aspect-square cursor-pointer object-cover relative top-2 w-full h-full"
+              className="aspect-square cursor-pointer object-cover relative  w-full h-full"
               src={listing.images[2]}
               alt=""
             />

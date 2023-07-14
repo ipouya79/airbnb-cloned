@@ -40,6 +40,7 @@ export default function RegisterPage() {
         <h1 className="text-4xl text-center mb-4">ثبت نام</h1>
         <form className="max-w-md mx-auto" onSubmit={registerUser}>
           <input
+          id="registerName"
             type="text"
             placeholder=" Your Name"
             className="mb-2 loginNameClass"
@@ -48,6 +49,7 @@ export default function RegisterPage() {
             required
           />
           <input
+          id="registerEmail"
             type="email"
             placeholder="Your@email.com"
             className="mb-2"
@@ -56,6 +58,7 @@ export default function RegisterPage() {
             required
           />
           <input
+          id="registerPassword"
             type="password"
             placeholder="Password"
             className="mb-2"
